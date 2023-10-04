@@ -1,0 +1,13 @@
+@font-face {
+	src: url("../fonts/Li Alinur Tatsama Unicode Italic.ttf");
+	src: url("../fonts/Li Alinur Tatsama Unicode.ttf");
+	src: url("../fonts/Ruposhi Bangla UI Uni Bold Italic.ttf");
+	src: url("../fonts/Ruposhi Bangla UI Uni Bold.ttf");
+	src: url("../fonts/Ruposhi Bangla UI Uni Italic.ttf");
+	src: url("../fonts/Ruposhi Bangla UI Uni.ttf");
+    
+    font-family: "Alinur,Ruposhi";
+}
+body{
+    font-family: "Ruposhi";
+}

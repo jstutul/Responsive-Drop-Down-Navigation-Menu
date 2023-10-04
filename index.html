@@ -8,77 +8,123 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/header.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-    <div class="header py-2 bg-white">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-10 col-md-8">
-                    <a href="#" class="d-flex logo-container">
-                        <div class="logo">
-                            <img src="images/school.jpg" class="logo_img mr-2" alt="School Logo">
-                        </div>
-                        <div class="header-content">
-                            <p class="school-estd">স্থাপিত: ১৮৩৬</p>
-                            <h1 class="school-name">সিলেট সরকারি পাইলট উচ্চ বিদ্যালয় </h1>
-                            <h2 class="school-address">ডাক বাংলো রোড, কালীঘাট, সিলেট-৩১০০</h2>
-                        </div>
-                    </a>
+  
+    <header>
+        <div class="header py-2 bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-10 col-md-8">
+                        <a href="#" class="d-flex logo-container">
+                            <div class="logo">
+                                <img src="images/school.jpg" class="logo_img mr-2" alt="School Logo">
+                            </div>
+                            <div class="header-content">
+                                <p class="school-estd">স্থাপিত: ১৮৩৬</p>
+                                <h1 class="school-name">সিলেট সরকারি পাইলট উচ্চ বিদ্যালয় </h1>
+                                <h2 class="school-address">ডাক বাংলো রোড, কালীঘাট, সিলেট-৩১০০</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mujib-corner col-lg-2 col-md-4 text-center p-2">
+                        <img src="images/mujib_logo.png" class="" alt="mujib corner">
+                    </div>
                 </div>
-                <div class="mujib-corner col-lg-2 col-md-4 text-center p-2">
-                    <img src="images/mujib_logo.png" class="" alt="mujib corner">
+            </div>
+            <nav>
+                <div class="navbar">
+                    <i class="bx bx-menu"></i>
+                    <div class="nav-links">
+                        <div class="sidebar-logo">
+                            <span class="logo-name">
+                                <img src="images/school.jpg" class="logo_img mr-2" alt="School Logo">
+                            </span>
+                            <i class="bx bx-x"></i>
+                        </div>
+                        <ul class="links">
+                            <li><a href="#">HOME</a></li>
+                            <li>
+                                <a href="#">HTML &amp; CSS</a>
+                                <i class="bx bxs-chevron-down htmlcss-arrow arrow  "></i>
+                                <ul class="htmlCss-sub-menu sub-menu">
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Login Forms</a></li>
+                                    <li><a href="#">Card Design</a></li>
+                                    <li class="more">
+                                        <span><a href="#">More</a>
+                                            <i class="bx bxs-chevron-right arrow more-arrow"></i>
+                                        </span>
+                                        <ul class="more-sub-menu sub-menu">
+                                            <li><a href="#">Neumorphism</a></li>
+                                            <li><a href="#">Pre-loader</a></li>
+                                            <li><a href="#">Glassmorphism</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">JAVASCRIPT</a>
+                                <i class="bx bxs-chevron-down js-arrow arrow "></i>
+                                <ul class="js-sub-menu sub-menu">
+                                    <li><a href="#">Dynamic Clock</a></li>
+                                    <li><a href="#">Form Validation</a></li>
+                                    <li><a href="#">Card Slider</a></li>
+                                    <li><a href="#">Complete Website</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </nav>
+            <!-- <div class="notice-board">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="notice d-flex">
+                                <h5>নোটিশ</h5>
+                                <div class="notice-container">
+                                    <marquee behavior="" direction="" onmouseover="this.stop();" onmouseout="this.start();">
+                                        <p>
+                                            <strong><a href="#" target="_blank" class="scroll-notice-link"> <i class="fas fa-bell"></i>আন্তঃক্যান্ট টেবিল টেনিস প্রতিযোগিতা ২০২৩ বাছাই সংক্রান্ত&nbsp;নোটিশ   || </a></strong>
+                                            <strong><a href="#" target="_blank" class="scroll-notice-link"> <i class="fas fa-bell"></i>২০২৪ শিক্ষাবর্ষে নার্সারি শ্রেণির ভর্তি বিজ্ঞপ্তি   || </a></strong>
+                                            <strong><a href="#" target="_blank" class="scroll-notice-link"> <i class="fas fa-bell"></i>২০২৩-২৪ শিক্ষাবর্ষে একাদশ শ্রেণির ভর্তি সংক্রান্ত নির্দেশনা-২   || </a></strong>
+                                            <strong><a href="#" target="_blank" class="scroll-notice-link"> <i class="fas fa-bell"></i>২০২৩-২৪ শিক্ষাবর্ষে একাদশ শ্রেণির ভর্তি সংক্রান্ত নির্দেশনা   || </a></strong>
+                                            <strong><a href="#" target="_blank" class="scroll-notice-link"> <i class="fas fa-bell"></i>ডেঙ্গু সতর্কতা- ডা. ইসমত আরা শিমুল   || </a></strong>
+                                            <strong><a href="#" target="_blank" class="scroll-notice-link"> <i class="fas fa-bell"></i>২০২৩-২৪ শিক্ষাবর্ষে একাদশ শ্রেণির ভর্তি বিজ্ঞপ্তি   || </a></strong>
+                                            <strong><a href="#" target="_blank" class="scroll-notice-link"> <i class="fas fa-bell"></i>সংশোধিত বাৎসরিক একাডেমিক ক্যালেন্ডার&nbsp;২০২৩   || </a></strong>
+                                            <strong><a href="#" target="_blank" class="scroll-notice-link"> <i class="fas fa-bell"></i>অধ্যক্ষ মহোদয়ের সাথে সাক্ষাৎ সংক্রান্ত নোটিশ   || </a></strong>
+                                            <strong><a href="#" target="_blank" class="scroll-notice-link"> <i class="fas fa-bell"></i>২০২১ সালে চ্যাম্পিয়ন শিক্ষা প্রতিষ্ঠান হিসেবে সেনাবাহিনী প্রধান ট্রফি অর্জন   || </a></strong>
+                                        </p>
+                                    </marquee>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
                 </div>
             </div>
         </div>
-        <nav>
-            <div class="navbar">
-                <i class="bx bx-menu"></i>
-                <div class="nav-links">
-                    <div class="sidebar-logo">
-                        <span class="logo-name">CodingLab</span>
-                        <i class="bx bx-x"></i>
-                    </div>
-                    <ul class="links">
-                        <li><a href="#">HOME</a></li>
-                        <li>
-                            <a href="#">HTML &amp; CSS</a>
-                            <i class="bx bxs-chevron-down htmlcss-arrow arrow  "></i>
-                            <ul class="htmlCss-sub-menu sub-menu">
-                                <li><a href="#">Web Design</a></li>
-                                <li><a href="#">Login Forms</a></li>
-                                <li><a href="#">Card Design</a></li>
-                                <li class="more">
-                                    <span><a href="#">More</a>
-                                        <i class="bx bxs-chevron-right arrow more-arrow"></i>
-                                    </span>
-                                    <ul class="more-sub-menu sub-menu">
-                                        <li><a href="#">Neumorphism</a></li>
-                                        <li><a href="#">Pre-loader</a></li>
-                                        <li><a href="#">Glassmorphism</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">JAVASCRIPT</a>
-                            <i class="bx bxs-chevron-down js-arrow arrow "></i>
-                            <ul class="js-sub-menu sub-menu">
-                                <li><a href="#">Dynamic Clock</a></li>
-                                <li><a href="#">Form Validation</a></li>
-                                <li><a href="#">Card Slider</a></li>
-                                <li><a href="#">Complete Website</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </nav>
-    </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row"></div>
+        </div>
+    </footer>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
