@@ -1,13 +1,53 @@
 @font-face {
-	src: url("../fonts/Li Alinur Tatsama Unicode Italic.ttf");
-	src: url("../fonts/Li Alinur Tatsama Unicode.ttf");
-	src: url("../fonts/Ruposhi Bangla UI Uni Bold Italic.ttf");
-	src: url("../fonts/Ruposhi Bangla UI Uni Bold.ttf");
-	src: url("../fonts/Ruposhi Bangla UI Uni Italic.ttf");
-	src: url("../fonts/Ruposhi Bangla UI Uni.ttf");
-    
+    src: url("../fonts/Li Alinur Tatsama Unicode Italic.ttf");
+    src: url("../fonts/Li Alinur Tatsama Unicode.ttf");
+    src: url("../fonts/Ruposhi Bangla UI Uni Bold Italic.ttf");
+    src: url("../fonts/Ruposhi Bangla UI Uni Bold.ttf");
+    src: url("../fonts/Ruposhi Bangla UI Uni Italic.ttf");
+    src: url("../fonts/Ruposhi Bangla UI Uni.ttf");
+
     font-family: "Alinur,Ruposhi";
 }
-body{
+body {
     font-family: "Ruposhi";
+}
+
+/* carousel start */
+.pointer {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+}
+
+main .container {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+}
+/* carousel end */
+
+.notice {
+    display: flex;
+    height: 30px;
+    background: #3e8da8;
+    box-shadow: 0 7px 3px rgba(0, 0, 0, 0.2);
+    padding: 5px 0px;
+}
+.notice .title {
+    width: 150px;
+    background: #f9f9f9;
+    height: 31px;
+    margin-top: -6px !important;
+    text-align: center;
+    color: #3e8da8;
+    padding: 8px 0px 0px 0px;
+}
+.notice .title p {
+    font-size: 12px;
+    font-family: Ruposhi;
+    font-weight: 600;
+}
+.scroll-notice-link {
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
 }
