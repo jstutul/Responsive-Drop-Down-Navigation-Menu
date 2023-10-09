@@ -5,8 +5,8 @@
     src: url("../fonts/Ruposhi Bangla UI Uni Bold.ttf");
     src: url("../fonts/Ruposhi Bangla UI Uni Italic.ttf");
     src: url("../fonts/Ruposhi Bangla UI Uni.ttf");
-
-    font-family: "Alinur,Ruposhi";
+    src: url("../fonts/Nikosh.ttf");
+    font-family: "Alinur,Ruposhi,Nikosh";
 }
 :root {
     --main: #4f4f65ff;
