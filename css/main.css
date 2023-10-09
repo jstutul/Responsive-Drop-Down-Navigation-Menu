@@ -600,3 +600,32 @@ footer {
     color: var(--sub);
     margin-right: 20px;
 }
+
+/* //////////////////////////////// */
+/* Result Page Css Design Code  */
+/* //////////////////////////////// */
+.result-header {
+    display: flex;
+    background-color: #ffffff;
+    padding: 5px;
+}
+.result-header .logo {
+    width: 200px;
+    overflow: hidden;
+}
+.result-header .logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.result-header .details {
+    width: 100%;
+    padding: 20px;
+}
+
+#result-table thead .exam-title {
+    text-align: center;
+    background-color: var(--sub);
+    color: #ffffff;
+    padding: 10px;
+}
