@@ -348,112 +348,26 @@ marquee#dvNotice {
     margin-bottom: 10px;
 }
 
-/* gallery */
-
-#gallery .image {
-    overflow: hidden;
+.popup-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-.img-overlay i {
-    color: #fff;
-    font-size: 3em;
-}
-#gallery .img-wrapper {
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-}
-#gallery .img-overlay {
-    background: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.popup-gallery .gallery-image {
+    width: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 1;
-    i {
-        color: #fff;
-        font-size: 3em;
-    }
+    overflow: hidden;
 }
 
-#overlay {
-    background: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    img {
-        margin: 0;
-        width: 80%;
-        height: auto;
-        object-fit: contain;
-        padding: 5%;
-        @media screen and (min-width: 768px) {
-            width: 60%;
-        }
-        @media screen and (min-width: 1200px) {
-            width: 50%;
-        }
-    }
+.popup-gallery .gallery-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
-#nextButton {
-    color: #fff;
-    font-size: 2em;
-    transition: opacity 0.8s;
-    &:hover {
-        opacity: 0.7;
-    }
-    @media screen and (min-width: 768px) {
-        font-size: 3em;
-    }
-}
-
-#prevButton {
-    color: #fff;
-    font-size: 2em;
-    transition: opacity 0.8s;
-    &:hover {
-        opacity: 0.7;
-    }
-    @media screen and (min-width: 768px) {
-        font-size: 3em;
-    }
-}
-
-#exitButton {
-    color: #fff;
-    font-size: 2em;
-    transition: opacity 0.8s;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    &:hover {
-        opacity: 0.7;
-    }
-    @media screen and (min-width: 768px) {
-        font-size: 3em;
-    }
-}
-
-#image-gallery .image {
-    margin-bottom: 15px;
-}
-#image-gallery .image .img-wrapper .img-responsive {
-    max-height: 200px;
-}
 /* mobile device */
 
 @media (max-width: 575px) {
@@ -517,21 +431,6 @@ marquee#dvNotice {
     .single-fact .number {
         height: 44px;
     }
-    #image-gallery .row {
-        justify-content: center;
-    }
-    #image-gallery .row .image {
-        height: 150px;
-        width: 200px;
-        margin-bottom: 10px;
-    }
-    #gallery .img-overlay {
-        top: 0;
-        height: 150px;
-    }
-    .img-overlay i {
-        font-size: 30px;
-    }
     #overlay img {
         position: absolute;
         top: 0;
@@ -540,6 +439,68 @@ marquee#dvNotice {
         width: 100% !important;
         max-height: 175px;
         height: 175px;
+    }
+}
+/* Gallery  */
+
+/*///////////// gallery CSS /////////////*/
+
+.-fx-image-gal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    justify-content: center;
+}
+.-fx-gal-item {
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    border: 3px solid var(--sub);
+    padding: 14px;
+    border-radius: 7px;
+}
+
+.-fx-gal-item a {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.-fx-gal-image-thumb img {
+    width: 100%;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+.-fx-gal-image-thumb:hover img {
+    cursor: pointer;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transform: scale(1.5);
+    transition: all 0.5s ease;
+}
+@media (min-width: 420px) {
+    .-fx-image-gal {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .-fx-gal-item {
+        width: 50%;
+    }
+}
+@media (min-width: 768px) {
+    .-fx-gal-item {
+        width: 33.33%;
     }
 }
 
@@ -607,12 +568,12 @@ footer {
     border-radius: 5px;
     display: flex;
     align-items: flex-start;
-    border:1px solid var(--sub);
+    border: 1px solid var(--sub);
 }
 .single-download-event-list .event-thum {
     width: 70px;
 }
-.event-thum a{
+.event-thum a {
     text-decoration: none;
     background-color: transparent;
     color: var(--sub);
