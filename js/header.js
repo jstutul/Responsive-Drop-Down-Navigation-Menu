@@ -1,3 +1,8 @@
+// search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+// let searchBoxCancel = document.querySelector(".search-box .bx-x");
+
 // sidebar open close js code
 let navLinks = document.querySelector(".nav-links");
 let menuOpenBtn = document.querySelector(".navbar .bx-menu");
@@ -18,7 +23,7 @@ htmlcssArrow.onclick = function () {
 // moreArrow.onclick = function () {
 //     navLinks.classList.toggle("show2");
 // };
-let jsArrow = document.querySelector(".js-arrow");
-jsArrow.onclick = function () {
-    navLinks.classList.toggle("show3");
-};
+// let jsArrow = document.querySelector(".js-arrow");
+// jsArrow.onclick = function () {
+//     navLinks.classList.toggle("show3");
+// };

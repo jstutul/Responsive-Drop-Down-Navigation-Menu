@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="title-section">
                         <div class="title-name">
                             <h2>ফলাফল অনুসন্ধান</h2>
@@ -52,18 +52,18 @@
                     </div>
                     <div class="search-section">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="logo">
+                            <div class="col-lg-4 col-md-6 d-none d-sm-block">
+                                <div class="logo p-2">
                                     <img src="images/asset/1.jpg" class="" alt="">
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="seach-form">
+                            <div class="col-lg-8 col-md-6">
+                                <div class="seach-form py-2">
                                     <div class="row">
-                                        <div class="col-12 mb-2">
+                                        <div class="col-lg-6 mb-2">
                                             <label for="inputState" class="form-label">পরীক্ষার সান</label>
                                             <select class="form-select" aria-label="Default select example">
-                                                <option selected>নির্বাচন করুন</option>
+                                                <option selected value="0">নির্বাচন করুন</option>
                                                 <option value="1">২০১৮</option>
                                                 <option value="2">২০১৯</option>
                                                 <option value="3">২০২০</option>
@@ -74,10 +74,10 @@
                                                 <option value="3">২০২৫</option>
                                             </select>
                                         </div>
-                                        <div class="col-12 mb-2">
+                                        <div class="col-lg-6 mb-2">
                                             <label for="inputState" class="form-label">শ্রেণী</label>
                                             <select class="form-select" aria-label="Default select example">
-                                                <option selected>নির্বাচন করুন</option>
+                                                <option selected value="0">নির্বাচন করুন</option>
                                                 <option value="1">৬ষ্ট</option>
                                                 <option value="2">৭ম</option>
                                                 <option value="3">৮ম</option>
@@ -85,24 +85,42 @@
                                                 <option value="3">১০ম</option>
                                             </select>
                                         </div>
-                                        <div class="col-12 mb-2">
+                                        <div class="col-lg-6 mb-2">
                                             <label for="inputState" class="form-label">বিভাগ</label>
                                             <select class="form-select" aria-label="Default select example">
-                                                <option selected>নির্বাচন করুন</option>
-                                                <option value="1">৬ষ্ট</option>
-                                                <option value="2">৭ম</option>
-                                                <option value="3">৮ম</option>
-                                                <option value="3">৯ম</option>
-                                                <option value="3">১০ম</option>
+                                                <option selected value="0">নির্বাচন করুন</option>
+                                                <option value="1">মানবিক</option>
+                                                <option value="2">বিজ্ঞান</option>
+                                                <option value="3">বাণিজ্য</option>
                                             </select>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-lg-6 mb-2">
+                                            <label for="inputState" class="form-label">পরীক্ষা</label>
                                             <select class="form-select" aria-label="Default select example">
-                                                <option selected>Open this select menu</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
+                                                <option selected value="0">নির্বাচন করুন</option>
+                                                <option value="1">মাসিক পরীক্ষা</option>
+                                                <option value="2">অর্ধ বার্ষিক</option>
+                                                <option value="3">বার্ষিক</option>
                                             </select>
+                                        </div>
+                                        <div class="col-lg-6 mb-2">
+                                            <label for="">ফলাফলের ধরন</label>
+                                            <select class="form-select" aria-label="নির্বাচন করুন" id="txtResultType">
+                                                <option selected value="0">নির্বাচন করুন</option>
+                                                <option value="1">ব্যক্তিগত</option>
+                                                <option value="2">সম্পূর্ণ</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 mb-2">
+                                            <label for="inputState" class="form-label">রোল নং</label>
+                                            <input type="text" id="txtRollNumber" class="form-control" readonly
+                                                disabled />
+                                        </div>
+                                        <div class="col-lg-12 p-2 text-center">
+                                            <button class="btn btn-sm btn-warning text-white">&nbsp; Seach
+                                                Again</button>
+                                            <button class="btn btn-sm btn-primary"><i
+                                                    class="fa fa-search"></i>&nbsp;Submit</button>
                                         </div>
                                     </div>
                                 </div>
@@ -111,735 +129,15 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    
-                </div>
             </div>
         </div>
     </main>
     <footer data-include="footer"></footer>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/aos.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <!-- <script src="js/header.js"></script> -->
     <script src="js/main.js"></script>
 </body>
 
 </html>
-
-http://localhost:6650/Apartment/Sale/Product?projectId=1&BuildingId=40&clientId=901&products=1623
-
-
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Web;
-using System.Web.Mvc;
-using System.Web.Services.Description;
-using Apartment.Data.ApartmentDataModel;
-using Apartment.Models;
-using Apartment.Service;
-using Common.Service;
-using Common.Service.StoredProcedure;
-using Common.Web.Helpers;
-
-namespace Apartment.Controllers
-{
-    public class SaleController : Controller
-    {
-        private readonly IProjectCategoryService projectCategoryService;
-        private readonly IFacingService facingService;
-        private readonly IFloorService floorService;
-        private readonly IProductStatusService productStatusService;
-        private readonly IProductInformationService productInformationService;
-        private readonly IOrganizationService organizationService;
-        private readonly IClientInformationService clientInformationService;
-        private readonly IProjectCarParkingService projectCarParkingService;
-        private readonly IOfficeExecutiveService officeExecutiveService;
-        private readonly IDepartmentService departmentService;
-        private readonly ISaleDetailsService saleDetailsService;
-        private readonly ISaleCarParkingService saleCarParkingService;
-        private readonly IModeOfSaleService modeOfSaleService;
-        private readonly IModeOfPaymentService modeOfPaymentService;
-        private readonly IInstallmentService installmentService;
-        private readonly ICollectionService collectionService;
-        private readonly IGenderService genderService;
-        private readonly IProjectInformationService projectInformationService;
-        private readonly IBuildingInformationService buildingInformationService;
-        private readonly ISPService sPService;
-
-        public SaleController(IProjectCategoryService projectCategoryService, IFacingService facingService
-            , IFloorService floorService, IProductStatusService productStatusService
-            , IProductInformationService productInformationService, IOrganizationService organizationService
-            , IClientInformationService clientInformationService, IProjectCarParkingService projectCarParkingService
-            , IOfficeExecutiveService officeExecutiveService, IDepartmentService departmentService
-            , ISaleDetailsService saleDetailsService, ISaleCarParkingService saleCarParkingService
-            , IModeOfSaleService modeOfSaleService, IModeOfPaymentService modeOfPaymentService
-            , IInstallmentService installmentService, ICollectionService collectionService
-            , IGenderService genderService,
-            IProjectInformationService projectInformationService,
-            IBuildingInformationService buildingInformationService,
-            ISPService sPService)
-        {
-            this.projectCategoryService = projectCategoryService;
-            this.facingService = facingService;
-            this.floorService = floorService;
-            this.productStatusService = productStatusService;
-            this.productInformationService = productInformationService;
-            this.organizationService = organizationService;
-            this.clientInformationService = clientInformationService;
-            this.projectCarParkingService = projectCarParkingService;
-            this.officeExecutiveService = officeExecutiveService;
-            this.departmentService = departmentService;
-            this.saleDetailsService = saleDetailsService;
-            this.saleCarParkingService = saleCarParkingService;
-            this.modeOfSaleService = modeOfSaleService;
-            this.modeOfPaymentService = modeOfPaymentService;
-            this.installmentService = installmentService;
-            this.collectionService = collectionService;
-            this.genderService = genderService;
-            this.projectInformationService = projectInformationService;
-            this.buildingInformationService = buildingInformationService;
-            this.sPService = sPService;
-        }
-        public ActionResult Index(int organId = 0, int projectId = 0, int buildingId = 0, string fileNo = "", string clientName = "", string status = "")
-        {
-            ViewBag.Organizations = organizationService.GetAll().Where(x => x.IsActive).ToList();
-            ViewBag.Categories = projectCategoryService.GetAll().Where(x => x.IsActive).ToList();
-            ViewBag.Facings = facingService.GetAll().Where(x => x.IsActive).ToList();
-            ViewBag.Floors = floorService.GetAll().Where(x => x.IsActive).ToList();
-            ViewBag.Status = productStatusService.GetAll().Where(x => x.IsActive).ToList();
-            ViewBag.BuildingId = buildingId;
-            ViewBag.Projects = projectInformationService.GetAll().Where(x => x.IsActive).ToList();
-            ViewBag.Buildings = buildingInformationService.GetAll().Where(x => x.IsActive).ToList();
-            var orgId = organId;
-            if (buildingId > 0)
-            {
-                orgId = buildingInformationService.GetById(buildingId).OrganizationId;
-            }
-            ViewBag.OrgId = orgId;
-            ViewBag.ProjectId = projectId;
-            ViewBag.StatusName = status;
-            ViewBag.ClientName = clientName;
-            ViewBag.FileNo = fileNo;
-            return View();
-        }
-        public ActionResult Product(int clientId, string products, int projectId, int BuildingId)
-        {
-
-			var productList = new List<ProductInformation>();
-            var productNo = "";
-            foreach (var pr in products.Split(','))
-            {
-                var aProduct = productInformationService.GetById(int.Parse(pr));
-                productList.Add(aProduct);
-                if (string.IsNullOrEmpty(productNo))
-                {
-                    productNo = aProduct.ProductNo;
-                }
-                else
-                {
-                    productNo += "," + aProduct.ProductNo;
-                }
-            }
-            ViewBag.Product = productList;
-            var project = projectInformationService.GetById(projectId);
-            var building = buildingInformationService.GetById(BuildingId);
-            var organization = organizationService.GetById(building.OrganizationId);
-            var client = clientInformationService.GetById(clientId);
-            ViewBag.Organization = organization;
-            ViewBag.Project = project;
-            ViewBag.Building = building;
-            ViewBag.ProductNo = productNo;
-            ViewBag.Client = client;
-            ViewBag.Floors = floorService.GetAll().Where(x => x.IsActive).ToList();
-            ViewBag.Categories = projectCategoryService.GetAll().Where(x => x.IsActive).ToList();
-            ViewBag.Facings = facingService.GetAll().Where(x => x.IsActive).ToList();
-            var statusId =
-                productStatusService.GetAll().FirstOrDefault(x => x.ProductStatusName.ToLower() == "unsold").Id;
-            ViewBag.Parkings = projectCarParkingService.GetAll().Where(x => x.BuildingId == building.Id && x.StatusId == statusId).ToList();
-            ViewBag.Status = productStatusService.GetAll().Where(x => x.IsActive && x.ProductStatusName.ToLower() == "sold").ToList();
-            var executives = officeExecutiveService.GetAll().Where(x => x.IsActive).ToList();
-            //var departments = departmentService.GetAll().Where(x => x.IsActive).ToList();
-            //var mrId = departments.FirstOrDefault(x => x.DepartmentName == "Marketing").Id;
-            //var crId = departments.FirstOrDefault(x => x.DepartmentName == "Credit").Id;
-            //ViewBag.MRExecutive = executives.Where(x => x.DepartmentId == mrId).ToList();
-            //ViewBag.CRExecutive = executives.Where(x => x.DepartmentId == crId).ToList();
-            ViewBag.MRExecutive = executives;
-            ViewBag.CRExecutive = executives;
-            ViewBag.Modes = modeOfSaleService.GetAll().Where(x => x.IsActive).ToList();
-            return View();
-        }
-
-        public ActionResult EditSale()
-        {
-            ViewBag.Organizations = organizationService.GetAll().Where(x => x.IsActive).ToList();
-            ViewBag.Projects = projectInformationService.GetAll().Where(x => x.IsActive).ToList();
-            ViewBag.Buildings = buildingInformationService.GetAll().Where(x => x.IsActive).ToList();
-            return View();
-        }
-
-        public ActionResult Edit(int id)
-        {
-            var sale = saleDetailsService.GetById(id);
-            ViewBag.Sale = sale;
-            var productList = productInformationService.GetAll().Where(x => x.FileNo == sale.FileNo && x.OrganizationId == sale.OrganizationId && x.IsActive).ToList();
-            ViewBag.Product = productList;
-            var project = projectInformationService.GetById(sale.ProjectId);
-            var building = buildingInformationService.GetById(sale.BuildingId);
-            var organization = organizationService.GetById(sale.OrganizationId);
-            var client = clientInformationService.GetById(sale.ClientId);
-            ViewBag.Organization = organization;
-            ViewBag.Project = project;
-            ViewBag.Building = building;
-            ViewBag.ProductNo = sale.ProductNo;
-            ViewBag.Client = client;
-            ViewBag.Floors = sPService.GetDataWithParameter(new
-            {
-                PROJECT_ID = sale.ProjectId,
-                BUILDING_ID = sale.BuildingId,
-                ORGANIZATION_ID = sale.OrganizationId,
-            }, "USP_GET_FLOOR").Tables[0].ToIList<Floor>();
-            ViewBag.Categories = projectCategoryService.GetAll().Where(x => x.IsActive).ToList();
-            ViewBag.Facings = facingService.GetAll().Where(x => x.IsActive).ToList();
-            var statusId =
-                productStatusService.GetAll().FirstOrDefault(x => x.ProductStatusName.ToLower() == "unsold").Id;
-            var carParkings =
-                projectCarParkingService.GetAll()
-                    .Where(x => x.BuildingId == building.Id && x.StatusId == statusId)
-                    .ToList();
-            var saleParking = saleCarParkingService.GetAll().Where(x => x.SaleId == sale.Id).ToList();
-            ViewBag.SaleParking = saleParking;
-            carParkings.AddRange(saleParking.Select(park => projectCarParkingService.GetById(park.CarParkingId)));
-            ViewBag.Parkings = carParkings.OrderBy(x => x.Id).ToList();
-            ViewBag.Status = productStatusService.GetAll().Where(x => x.IsActive && x.ProductStatusName.ToLower() == "sold").ToList();
-            var executives = officeExecutiveService.GetAll().Where(x => x.IsActive).ToList();
-            //var departments = departmentService.GetAll().Where(x => x.IsActive).ToList();
-            //var mrId = departments.FirstOrDefault(x => x.DepartmentName == "Marketing").Id;
-            //var crId = departments.FirstOrDefault(x => x.DepartmentName == "Credit").Id;
-            //ViewBag.MRExecutive = executives.Where(x => x.DepartmentId == mrId).ToList();
-            //ViewBag.CRExecutive = executives.Where(x => x.DepartmentId == crId).ToList();
-            ViewBag.MRExecutive = executives;
-            ViewBag.CRExecutive = executives;
-            ViewBag.Modes = modeOfSaleService.GetAll().Where(x => x.IsActive).ToList();
-            return View();
-        }
-
-        public JsonResult Cancel(int clientId)
-        {
-            try
-            {
-                clientInformationService.Delete(clientId);
-                return Json(new { Message = "", Status = true }, JsonRequestBehavior.AllowGet);
-            }
-            catch (Exception ex)
-            {
-                return
-                    Json(
-                        new
-                        {
-                            Message = ex.GetErrorMessage(),
-                            Status = false
-                        }, JsonRequestBehavior.AllowGet);
-            }
-        }
-        public JsonResult Save(List<ProductInformation> products, SaleDetails sale, string saleDate, string parking)
-        {
-            try
-            {
-				
-				var existingSale = saleDetailsService.GetAll().FirstOrDefault(x => x.IsActive==true && x.ClientId==sale.ClientId && x.OrganizationId==sale.OrganizationId && x.ProjectId==sale.ProjectId && x.ProductNo==sale.ProductNo && x.FileNo==sale.FileNo);
-                if (existingSale != null)
-                {
-					return Json(new { Message = "Products already sold.", Status = true, SaleId = existingSale.Id,St=1 }, JsonRequestBehavior.AllowGet);
-				}
-                var dtSale = ReportHelper.FormatDate(saleDate);
-                sale.CollectionFromOtherCharges = sale.CollectionFromPlotValue = sale.BookingMoneyCollection = sale.DownPaymentCollection = sale.InstallmentCollection = sale.TotalCollection = 0;                
-                sale.SaleDate = dtSale;
-                sale.EntryDate = DateTime.Now;
-                sale.EntryUserId = SessionHelper.LoggedInUserId;
-                sale.IsActive = true;
-                var sold = saleDetailsService.Create(sale);
-                foreach (var aProduct in products)
-                {
-                    var product = productInformationService.GetById(aProduct.Id);
-                    product.ProjectId = sale.ProjectId;
-                    product.BuildingId = sale.BuildingId;
-                    product.FileNo = sale.FileNo;
-                    product.SaleId = sold.Id;
-                    product.FloorId = aProduct.FloorId;
-                    product.FacingId = aProduct.FacingId;
-                    product.ProductStatusId = sale.ProductStatusId;
-                    product.CategoryId = aProduct.CategoryId;
-                    product.ProductSize = aProduct.ProductSize;
-                    product.PricePerSft = aProduct.PricePerSft;
-                    product.UpdateDate = DateTime.Now;
-                    product.UpdateUserId = SessionHelper.LoggedInUserId;
-                    productInformationService.Update(product);
-                }
-
-                if (!string.IsNullOrEmpty(parking))
-                {
-                    var arrParking = parking.Split(',');
-                    foreach (var s in arrParking)
-                    {
-                        var carParking = new SaleCarParking
-                        {
-                            SaleId = sale.Id,
-                            CarParkingId = int.Parse(s),
-                            EntryDate = DateTime.Now,
-                            EntryUserId = SessionHelper.LoggedInUserId,
-                            IsActive = true
-                        };
-                        saleCarParkingService.Create(carParking);
-
-                        var aPark = projectCarParkingService.GetById(int.Parse(s));
-                        aPark.StatusId = sale.ProductStatusId;
-                        aPark.UpdateDate = DateTime.Now;
-                        aPark.UpdateUserId = SessionHelper.LoggedInUserId;
-                        projectCarParkingService.Update(aPark);
-                    }
-                }
-                return Json(new { Message = "Products sold successfully.", Status = true, SaleId = sale.Id, St = 0 }, JsonRequestBehavior.AllowGet);
-            }
-            catch (Exception ex)
-            {
-                return
-                    Json(
-                        new
-                        {
-                            Message = ex.GetErrorMessage(),
-                            Status = false,
-                            SaleId = 0
-                        }, JsonRequestBehavior.AllowGet);
-            }
-        }
-
-        public JsonResult Update(List<ProductInformation> products, SaleDetails sale, string saleDate, string parking)
-        {
-            try
-            {
-                var dtSale = ReportHelper.FormatDate(saleDate);
-                var aSale = saleDetailsService.GetById(sale.Id);
-                aSale.ModeOfSaleId = sale.ModeOfSaleId;
-                aSale.OrganizationId = sale.OrganizationId;
-                aSale.PricePerSft = sale.PricePerSft;
-                aSale.ProductNo = sale.ProductNo;
-                aSale.ProductStatusId = sale.ProductStatusId;
-                aSale.BuildingId = sale.BuildingId;
-                aSale.SaleDate = dtSale;
-                aSale.SalePrice = sale.SalePrice;
-                aSale.TotalPrice = sale.TotalPrice;
-                aSale.TotalSize = sale.TotalSize;
-                aSale.UpdateDate = DateTime.Now;
-                aSale.UpdateUserId = SessionHelper.LoggedInUserId;
-                aSale.Utility = sale.Utility;
-                aSale.AdjustmentSale = sale.AdjustmentSale;
-                aSale.BookingMoneyAmount = sale.BookingMoneyAmount;
-                aSale.CRExecutiveId = sale.CRExecutiveId;
-                aSale.Floor = sale.Floor;
-                aSale.FileStatus = sale.FileStatus;
-                aSale.FileNo = sale.FileNo;
-                aSale.Facing = sale.Facing;
-                aSale.ExecutiveId = sale.ExecutiveId;
-                aSale.DownPaymentAmount = sale.DownPaymentAmount;
-                aSale.Discount = sale.Discount;
-                aSale.ClientId = sale.ClientId;
-                aSale.Category = sale.Category;
-                aSale.CarParkingPrice = sale.CarParkingPrice;
-                aSale.IsMediaSale = sale.IsMediaSale;
-                aSale.MediaCommissionAmount = sale.MediaCommissionAmount;
-                aSale.AdditionalCost = sale.AdditionalCost;
-                aSale.AdditionalCostPercentage = sale.AdditionalCostPercentage;
-                aSale.IsActive = true;
-                saleDetailsService.Update(aSale);
-                var productnew = productInformationService.GetAll().Where(x => x.SaleId == sale.Id).ToList();
-                var newProductList = products.Where(x => x.IsNew == 1).ToList();
-                var uid = productStatusService.GetAll().FirstOrDefault(x => x.ProductStatusName.ToLower() == "unsold").Id;
-
-                foreach (var aProduct in productnew)
-                {
-                    var product = productInformationService.GetById(aProduct.Id);
-                    if (products.FirstOrDefault(c => c.Id == aProduct.Id) == null)
-                    {
-                        product.ProductStatusId = uid;
-                        product.FileNo = "";
-                        product.SaleId = null;
-                        product.UpdateDate = DateTime.Now;
-                        product.UpdateUserId = SessionHelper.LoggedInUserId;
-                        productInformationService.Update(product);
-                    }
-                    else
-                    {
-                        product.FacingId = aProduct.FacingId;
-                        product.ProductStatusId = sale.ProductStatusId;
-                        product.ProductSize = aProduct.ProductSize;
-                        product.PricePerSft = aProduct.PricePerSft;
-                        product.FileNo = sale.FileNo;
-                        product.UpdateDate = DateTime.Now;
-                        product.UpdateUserId = SessionHelper.LoggedInUserId;
-                        productInformationService.Update(product);
-                    }
-                }
-                foreach (var aProduct in newProductList)
-                {
-                    var product = productInformationService.GetById(aProduct.Id);
-                    product.SaleId = sale.Id;
-                    product.FloorId = aProduct.FloorId;
-                    product.FacingId = aProduct.FacingId;
-                    product.ProductStatusId = sale.ProductStatusId;
-                    product.CategoryId = aProduct.CategoryId;
-                    product.ProductSize = aProduct.ProductSize;
-                    product.PricePerSft = aProduct.PricePerSft;
-                    product.FileNo = sale.FileNo;
-                    product.UpdateDate = DateTime.Now;
-                    product.UpdateUserId = SessionHelper.LoggedInUserId;
-                    productInformationService.Update(product);
-                }
-
-
-                foreach (var prjcar in saleCarParkingService.GetAll().Where(x => x.SaleId == sale.Id).Select(source => projectCarParkingService.GetById(source.CarParkingId)))
-                {
-                    prjcar.StatusId =
-                        productStatusService.GetAll().FirstOrDefault(x => x.ProductStatusName.ToLower() == "unsold").Id;
-                    prjcar.UpdateDate = DateTime.Now;
-                    prjcar.UpdateUserId = SessionHelper.LoggedInUserId;
-                    prjcar.IsActive = true;
-                    projectCarParkingService.Update(prjcar);
-                }
-                saleCarParkingService.DeleteBySaleId(sale.Id);
-                if (!string.IsNullOrEmpty(parking))
-                {
-                    var arrParking = parking.Split(',');
-                    foreach (var s in arrParking)
-                    {
-                        var carParking = new SaleCarParking
-                        {
-                            SaleId = sale.Id,
-                            CarParkingId = int.Parse(s),
-                            EntryDate = DateTime.Now,
-                            EntryUserId = SessionHelper.LoggedInUserId,
-                            IsActive = true
-                        };
-                        saleCarParkingService.Create(carParking);
-
-                        var aPark = projectCarParkingService.GetById(int.Parse(s));
-                        aPark.StatusId = sale.ProductStatusId;
-                        aPark.UpdateDate = DateTime.Now;
-                        aPark.UpdateUserId = SessionHelper.LoggedInUserId;
-                        projectCarParkingService.Update(aPark);
-                    }
-                }
-                return Json(new { Message = "Sale Info update successfully.", Status = true }, JsonRequestBehavior.AllowGet);
-            }
-            catch (Exception ex)
-            {
-                return
-                    Json(
-                        new
-                        {
-                            Message = ex.GetErrorMessage(),
-                            Status = false
-                        }, JsonRequestBehavior.AllowGet);
-            }
-        }
-
-        public JsonResult GetSaleList(int BuildingId, string status)
-        {
-            var sales = saleDetailsService.GetAll().Where(x => x.BuildingId == BuildingId).ToList();
-            if (status == "")
-            {
-                return Json(sales, JsonRequestBehavior.AllowGet);
-            }
-            else
-            {
-                var stid =
-                    productStatusService.GetAll()
-                        .FirstOrDefault(x => x.ProductStatusName.ToLower() == status.ToLower())
-                        .Id;
-                sales = sales.Where(x => x.ProductStatusId == stid).ToList();
-                return Json(sales, JsonRequestBehavior.AllowGet);
-            }
-        }
-
-        public ActionResult JointFlatCreate()
-        {
-            ViewBag.Organizations = organizationService.GetAll().ToList();
-            ViewBag.Facing = facingService.GetAll().ToList();
-            ViewBag.Floor = floorService.GetAll().ToList();
-            //var mrId = departmentService.GetAll().FirstOrDefault(x => x.DepartmentName.ToLower() == "marketing").Id;
-            //ViewBag.Executive = officeExecutiveService.GetAll().Where(x => x.DepartmentId == mrId).ToList();
-            ViewBag.Executive = officeExecutiveService.GetAll().ToList();
-            ViewBag.Gender = genderService.GetAll().ToList();
-            ViewBag.Mode = modeOfSaleService.GetAll().ToList();
-            return View();
-        }
-
-        public JsonResult JointFlatSave(List<ClientSale> clients)
-        {
-            try
-            {
-                if (clients.Count != 2)
-                {
-                    return Json(new { Message = "Please click add button.", Status = false }, JsonRequestBehavior.AllowGet);
-                }
-                if (clients.FirstOrDefault(x => x.LandOwner == 1) == null || clients.FirstOrDefault(x => x.LandOwner == 0) == null)
-                {
-                    return Json(new { Message = "There must be one land owner and one developer.", Status = false }, JsonRequestBehavior.AllowGet);
-                }
-                var unsoldId =
-                    productStatusService.GetAll().FirstOrDefault(x => x.ProductStatusName.Trim().ToLower() == "unsold").Id;
-                var landOwnerId =
-                    productStatusService.GetAll().FirstOrDefault(x => x.ProductStatusName.Trim().ToLower() == "land owner").Id;
-                foreach (var client in clients)
-                {
-                    var proj = buildingInformationService.GetById(client.BuildingId);
-                    var prod = productInformationService.GetById(client.ProductId);
-                    if (client.LandOwner == 0)
-                    {
-                        var aProduct = new ProductInformation
-                        {
-                            OrganizationId = prod.OrganizationId,
-                            BuildingId = prod.BuildingId,
-                            ProductNo = prod.ProductNo,
-                            CategoryId = prod.CategoryId,
-                            FacingId = prod.FacingId,
-                            FloorId = prod.FloorId,
-                            ProductStatusId = unsoldId,
-                            ProductUnitId = prod.ProductUnitId,
-                            ProductSize = client.Size,
-                            PricePerSft = client.Price,
-                            BookingMoney = prod.BookingMoney,
-                            DownPayment = prod.DownPayment,
-                            Utility = prod.Utility,
-                            EntryDate = DateTime.Now,
-                            EntryUserId = SessionHelper.LoggedInUserId,
-                            IsActive = true
-                        };
-                        productInformationService.Create(aProduct);
-                    }
-                    else
-                    {
-                        var fileNo = "";
-                        var starting = proj.ProjectShortName + "-LW-";
-                        fileNo =
-                                sPService.GetDataWithoutParameter("USP_GET_ALL_CLIENT_INFORMATION").Tables[0].ToList<ClientInformation>()
-                                    .Where(x => x.OrganizationId == proj.OrganizationId && x.FileNo.Contains(starting))
-                                    .Max(x => x.FileNo.Split('-')[2]);
-                        if (string.IsNullOrEmpty(fileNo))
-                            fileNo = "0";
-                        fileNo = (int.Parse(fileNo) + 1).ToString().PadLeft(2, '0');
-                        fileNo = starting + fileNo;
-
-                        var aClient = new ClientInformation()
-                        {
-                            OrganizationId = client.OrganizationId,
-                            FileNo = fileNo,
-                            ClientName = client.Name,
-                            DateOfBirth = ReportHelper.FormatDate(client.DateOfBirth),
-                            GenderId = client.GenderId,
-                            MobileNo = client.MobileNo,
-                            MobileNoForSMS = client.MobileNo,
-                            EntryDate = DateTime.Now,
-                            EntryUserId = SessionHelper.LoggedInUserId,
-                            IsActive = true
-                        };
-                        clientInformationService.Create(aClient);
-
-                        prod.ProductStatusId = landOwnerId;
-                        prod.ProductSize = client.Size;
-                        prod.PricePerSft = client.Price;
-                        prod.FileNo = fileNo;
-                        prod.UpdateDate = DateTime.Now;
-                        prod.UpdateUserId = SessionHelper.LoggedInUserId;
-                        prod.IsActive = true;
-                        productInformationService.Update(prod);
-                    }
-                }
-                return Json(new { Message = "Joint flat create successfull.", Status = true }, JsonRequestBehavior.AllowGet);
-            }
-            catch (Exception ex)
-            {
-                return
-                    Json(
-                        new
-                        {
-                            Message = ex.GetErrorMessage(),
-                            Status = false
-                        }, JsonRequestBehavior.AllowGet);
-            }
-        }
-
-        public JsonResult AssignLandOwner(int clientId, string products)
-        {
-            try
-            {
-                var client = clientInformationService.GetById(clientId);
-                foreach (
-                    var aProduct in
-                        products.Split(',').Select(productId => productInformationService.GetById(int.Parse(productId)))
-                    )
-                {
-                    aProduct.FileNo = client.FileNo;
-                    var status = productStatusService.GetAll()
-                        .FirstOrDefault(x => x.ProductStatusName.ToLower() == "land owner");
-                    if (status != null)
-                    {
-                        aProduct.ProductStatusId = status.Id;
-                    }
-                    aProduct.UpdateDate = DateTime.Now;
-                    aProduct.UpdateUserId = SessionHelper.LoggedInUserId;
-                    aProduct.IsActive = true;
-                    productInformationService.Update(aProduct);
-                }
-                return Json(new { Status = true, Message = "Land Owner assign successfull." }, JsonRequestBehavior.AllowGet);
-            }
-            catch (Exception ex)
-            {
-                return
-                    Json(
-                        new
-                        {
-                            Status = false,
-                            Message = (ex.GetErrorMessage())
-                        },
-                        JsonRequestBehavior.AllowGet);
-            }
-        }
-
-        public JsonResult GetSaleInfoWithDues(int orgId, int projId, int buildId, string fileNo)
-        {
-            try
-            {
-                var allData = sPService.GetDataWithParameter(new
-                {
-                    ORG_ID = orgId,
-                    PROJ_ID = projId,
-                    BUILD_ID = buildId,
-                    FILE_NO = fileNo
-                }, "USP_GET_CLIENT_SALE_INFO_AND_DUES");
-
-                var data = allData.Tables[0].AsEnumerable().Select(x => new
-                {
-                    ClientName = x.Field<string>("ClientName"),
-                    MobileNo = x.Field<string>("MobileNo"),
-                    Email = x.Field<string>("Email"),
-                    FlatNo = x.Field<string>("FlatNo"),
-                    FlatSize = x.Field<decimal>("FlatSize"),
-                    FlatPricePerSft = x.Field<decimal>("FlatPricePerSft"),
-                    Facing = x.Field<string>("Facing"),
-                    SaleDate = x.Field<string>("SaleDate"),
-                    SaleMode = x.Field<string>("SaleMode"),
-                    SalesExecutive = x.Field<string>("SalesExecutive"),
-                    FlatPrice = x.Field<decimal>("FlatPrice"),
-                    FlatValueCollection = x.Field<decimal>("FlatValueCollection"),
-                    FlatValueBalance = x.Field<decimal>("FlatValueBalance"),
-                    FlatValueDues = x.Field<decimal>("FlatValueDues"),
-                    TotalCharges = x.Field<decimal>("TotalCharges"),
-                    ChargesCollection = x.Field<decimal>("ChargesCollection"),
-                    ChargesDues = x.Field<decimal>("ChargesDues"),
-                    FacebookId = x.Field<string>("FacebookUserId"),
-                    SalePrice = x.Field<decimal>("SalePrice"),
-                    TotalClient = x.Field<int>("TotalClient"),
-                    CancelFileRemarks = x.Field<string>("CancelFileRemarks"),
-                    SalesExecutiveId = x.Field<int>("SalesExecutiveId"),
-                    //EntryUser = x.Field<string>("EntryUser"),
-                    FileStatus = x.Field<int>("FileStatus"),
-                    AllClients = x.Field<string>("AllClients"),
-                    SpecialNote = x.Field<string>("SpecialNote"),
-                    RegistrationRemarks = x.Field<string>("RegistrationRemarks"),
-                    RegUtilityReceivable = x.Field<decimal>("RegUtilityReceivable"),
-                    RegUtilityReceived = x.Field<decimal>("RegUtilityReceived"),
-                    OtherChargesReceivable = x.Field<decimal>("OtherChargesReceivable"),
-                    OtherChargesReceived = x.Field<decimal>("OtherChargesReceived"),
-                    RegUtilityBalance = x.Field<decimal>("RegUtilityBalance"),
-                    OtherChargesBalance = x.Field<decimal>("OtherChargesBalance"),
-                    //FinalAllotmentLetterStatus = x.Field<int>("FinalAllotmentLetterStatus"),
-                    //StatusDateFinalAllotmentLetter = x.Field<string>("StatusDateFinalAllotmentLetter"),
-                    OriginalSalesExecutive = x.Field<string>("OriginalSalesExecutive"),
-                    CancelLetterGenerationDate = x.Field<string>("LastCancelLetterGenerationDate"),
-
-                    //FlatTypeId = x.Field<int>("FlatTypeId"),
-                    //DevlopmentStatus = x.Field<int>("DevlopmentStatus"),
-                    //PurchaseStatus = x.Field<int>("PurchaseStatus"),
-                    //TownDevMut = x.Field<int>("TownDevMut"),
-                    //TownDevRem = x.Field<string>("TownDevRem"),
-                    //LastPrintDate = x.Field<string>("LastPrintDate"),
-                    DeedPrintDate = x.Field<string>("DeedPrintDate"),
-                    FloorId = x.Field<int>("FloorId"),
-                    FlatId = x.Field<int>("FlatId")
-                }).ToList();
-
-                return Json(new { Status = true, Data = data }, JsonRequestBehavior.AllowGet);
-            }
-            catch (Exception ex)
-            {
-                return Json(new { Status = false, Message = ex.GetErrorMessage() }, JsonRequestBehavior.AllowGet);
-            }
-        }
-        public JsonResult GetOrganizationList()
-        {
-            try
-            {
-                var data = organizationService.GetAll().Where(x => x.IsActive).ToList();
-                return Json(new { data, Status = true }, JsonRequestBehavior.AllowGet);
-            }
-            catch (Exception ex)
-            {
-                return
-                    Json(
-                        new
-                        {
-                            Message = ex.GetErrorMessage(),
-                            Status = false
-                        }, JsonRequestBehavior.AllowGet);
-            }
-        }
-        public JsonResult GetClientNameByFileAndProj(int OrgId = 0, int ProjId = 0, string FileNo = "")
-        {
-            try
-            {
-                var clientInfoList = sPService.GetDataWithoutParameter("USP_GET_ALL_CLIENT_INFORMATION").Tables[0].ToList<ClientInformation>();
-                var data = clientInfoList.AsEnumerable().Where(x => x.FileNo.ToLower() == FileNo.ToLower() && x.OrganizationId == OrgId && x.ProjectId == ProjId).FirstOrDefault();
-                return Json(new { data, Status = true }, JsonRequestBehavior.AllowGet);
-            }
-            catch (Exception ex)
-            {
-                return
-                    Json(
-                        new
-                        {
-                            Message = ex.GetErrorMessage(),
-                            Status = false
-                        }, JsonRequestBehavior.AllowGet);
-            }
-        }
-
-        //added by tutul
-        [HttpPost]
-        public JsonResult GetFloorWiseFlat(SaleDetails sale,int floorId)
-        {
-            try
-            {
-                var flatList=sPService.GetDataWithParameter(new {
-                    ORGANIZATION_ID= sale.OrganizationId,
-                    PROJECT_ID=sale.ProjectId,
-                    BUILDING_ID= sale.BuildingId,
-                    FLOOR_ID=floorId
-                }, "USP_GET_FLOOR_WISE_FLAT").Tables[0].AsEnumerable().Select(x => new
-                {
-                    FlatId   = x.Field<int>("FlatId"),
-                    FlatNo   = x.Field<string>("FlatNo"),
-                    FlatSize = x.Field<decimal>("FlatSize"),
-                }).ToList();
-                return Json(new { Data= flatList, Status = true }, JsonRequestBehavior.AllowGet);
-            }
-            catch (Exception ex)
-            {
-                return Json( new { Message = ex.GetErrorMessage(),Status = false }, JsonRequestBehavior.AllowGet);
-            }
-        }
-    }
-}
