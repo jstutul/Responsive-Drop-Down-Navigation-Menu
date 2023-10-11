@@ -116,6 +116,9 @@ nav .navbar .links li .arrow {
     color: #fff;
     transition: all 0.3s ease;
 }
+.rotate-180 {
+    transform: rotate(180deg) !important;
+}
 nav .navbar .links li .sub-menu {
     position: absolute;
     top: 70px;
@@ -128,8 +131,7 @@ nav .navbar .links li .sub-menu {
     z-index: 2;
     padding: 0px;
 }
-nav .navbar .links li:hover .htmlCss-sub-menu,
-nav .navbar .links li:hover .js-sub-menu {
+nav .navbar .links li:hover .htmlCss-sub-menu {
     display: block;
 }
 .navbar .links li .sub-menu li {
@@ -304,8 +306,7 @@ nav .navbar .links li:hover .js-sub-menu {
         align-items: center;
         justify-content: space-between;
     }
-    .links li:hover .htmlcss-arrow,
-    .links li:hover .js-arrow {
+    .links li:hover .htmlcss-arrow {
         transform: rotate(0deg);
     }
     .navbar .links li .sub-menu .more-sub-menu {
