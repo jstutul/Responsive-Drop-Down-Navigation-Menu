@@ -322,13 +322,10 @@ nav .navbar .links li:hover .js-sub-menu {
     nav .navbar .links li:hover .js-sub-menu {
         display: none;
     }
-    .navbar .nav-links.show1 .links .htmlCss-sub-menu,
-    .navbar .nav-links.show3 .links .js-sub-menu,
-    .navbar .nav-links.show2 .links .more .more-sub-menu {
+    .navbar .nav-links.show1 .links .htmlCss-sub-menu {
         display: block;
     }
-    .navbar .nav-links.show1 .links .htmlcss-arrow,
-    .navbar .nav-links.show3 .links .js-arrow {
+    .navbar .nav-links.show1 .links .htmlcss-arrow {
         transform: rotate(180deg);
     }
     .navbar .nav-links.show2 .links .more-arrow {
