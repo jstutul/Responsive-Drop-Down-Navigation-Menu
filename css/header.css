@@ -116,9 +116,7 @@ nav .navbar .links li .arrow {
     color: #fff;
     transition: all 0.3s ease;
 }
-.rotate-180 {
-    transform: rotate(180deg) !important;
-}
+
 nav .navbar .links li .sub-menu {
     position: absolute;
     top: 70px;
@@ -131,7 +129,8 @@ nav .navbar .links li .sub-menu {
     z-index: 2;
     padding: 0px;
 }
-nav .navbar .links li:hover .htmlCss-sub-menu {
+nav .navbar .links li:hover .htmlCss-sub-menu,
+nav .navbar .links li:hover .js-sub-menu {
     display: block;
 }
 .navbar .links li .sub-menu li {
@@ -224,7 +223,6 @@ nav .navbar .links li:hover .htmlCss-sub-menu {
 .navbar .bx-menu {
     display: none;
 }
-
 @media (max-width: 920px) {
     nav .navbar {
         max-width: 100%;
@@ -243,9 +241,6 @@ nav .navbar .links li:hover .htmlCss-sub-menu {
     }
 }
 @media (max-width: 800px) {
-    nav {
-        /* position: relative; */
-    }
     .navbar .bx-menu {
         display: block;
     }
@@ -306,7 +301,8 @@ nav .navbar .links li:hover .htmlCss-sub-menu {
         align-items: center;
         justify-content: space-between;
     }
-    .links li:hover .htmlcss-arrow {
+    .links li:hover .htmlcss-arrow,
+    .links li:hover .js-arrow {
         transform: rotate(0deg);
     }
     .navbar .links li .sub-menu .more-sub-menu {
@@ -342,5 +338,10 @@ nav .navbar .links li:hover .htmlCss-sub-menu {
 @media (max-width: 370px) {
     nav .navbar .nav-links {
         max-width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .rotate-180 {
+        transform: rotate(180deg) !important;
     }
 }
